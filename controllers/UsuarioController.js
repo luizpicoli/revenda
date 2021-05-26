@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
-const knex = require("../database/dbConfig");
+const knex = require("../database/dbconfig");
 
 module.exports = {
   async index(req, res) {
