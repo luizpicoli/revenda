@@ -6,7 +6,7 @@ const UsuarioController = require("./controllers/UsuarioController");
 const login = require("./middleware/login")
 
 routes.get("/carros", CarroController.index)
-      .post("/carros",login, CarroController.store);
+      .post("/carros", login, CarroController.store);
 
 routes.get("/usuarios", UsuarioController.index)
       .post("/usuarios", UsuarioController.store)
